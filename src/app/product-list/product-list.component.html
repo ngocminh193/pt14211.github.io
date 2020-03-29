@@ -10,7 +10,7 @@
             <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">{{product.name}}</a>
+                    <a routerLink="/product/{{product.id}}">{{product.name}}</a>
                 </h4>
                 <h5>${{product.price}}</h5>
                 <p class="card-text">{{product.desc}}</p>

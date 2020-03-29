@@ -23,9 +23,9 @@ export class ProductService {
     return this.http.put<Product>(`${this.api}/${product.id}`, product);
   }
 
-  // removeProduct(id){
-  //   return this.http.get<Product>(`${this.api}`);
-  // }
+  removeProduct(id): Observable<Product>{
+    return this.http.delete<Product>(`${this.api}/${id}`);
+  }
 
   addProduct(product): Observable<Product>{
     return this.http.post<Product>(`${this.api}`, product);

@@ -25,7 +25,7 @@
             <td>
                 <button class="btn btn-primary" routerLink="/product/{{product.id}}">Detail</button>
                 <button class="btn btn-info ml-3" routerLink="/product/edit/{{product.id}}">Edit</button>
-                <button class="btn btn-danger ml-3">Delete</button>
+                <button class="btn btn-danger ml-3" (click)="removeItem(product.id)">Delete</button>
             </td>
         </tr>
 
